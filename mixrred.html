@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none}
+</style>
+<head>
+  <title>Free HTML5 Templates</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style type="text/css">
+  #main #site_content .content_imagetext h3 strong em {
+	font-size: 150%;
+}
+  </style>
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+ 
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	       <h1><span><pre class="tab"><div align = "center"><pre class="tab">B   E   A   T   S</pre></div></span></h1>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h2><div align="center"><pre class="tab">ALIF   &   ZIKRIE</pre></div></h2>
+	    </div><!--close welcome_slogan-->			
+	  </div><!--close banner-->
+    </header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="headphones.html">Headphones</a></li>
+          <li><a href="earphones.html">Earphones</a></li>
+          <li><a href="speaker.html">Speaker</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div><!--close menubar-->	
+    </nav>	
+    
+	<div id="site_content">	
+   
+    
+<center>
+	
+     <br>
+	
+    
+    <div class="w3-container">
+ 
+
+</div>
+
+<div class="w3-content" style="max-width:500px">
+  	<img class="mySlides" src="image/HEADPHONES/MIXR/red/1.jpg" style="width:100%">
+	<img class="mySlides" src="image/HEADPHONES/MIXR/red/2.jpg" style="width:100%">
+	<img class="mySlides" src="image/HEADPHONES/MIXR/red/3.jpg" style="width:100%">
+	<img class="mySlides" src="image/HEADPHONES/MIXR/red/4.jpg" style="width:100%">
+	<img class="mySlides" src="image/HEADPHONES/MIXR/red/5.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-btn" onclick="plusDivs(-1)">Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next</button>
+  </div>
+  <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+  <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+  <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+  <button class="w3-btn demo" onclick="currentDiv(4)">4</button>
+  <button class="w3-btn demo" onclick="currentDiv(5)">5</button>
+ <h1>
+   <pre class="tab"><a href="mixrcolor.html"> 
+<font color="#FFFFFF">&lt;&lt;PREVIEWS</font></a></pre></h1>
+  
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+   
+     
+    
+</center>    
+         
+	</div><!--close content_item-->
+</div><!--close content-->   
+	</div><!--close site_content-->  	
+  </div><!--close main-->
+  
+   <footer>
+	   <a href="index.html">Home</a> | <a href="headphones.html">Headphones</a> | <a href="earphones.html">Earphones</a> | <a href="speaker.html">Speaker</a> | <a href="video.html">Video</a> | <a href="contact.html">Contact Us</a> | <a href="aboutus.html">About Us</a><br/>
+	   <br/>
+</footer>
+   
+
+  <!-- javascript at the bottom for fast page loading -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/image_slide.js"></script>  
+  
+</body>
+</html>
